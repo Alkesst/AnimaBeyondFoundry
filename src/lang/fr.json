@@ -462,6 +462,8 @@
   "anima.ui.systemSettings.sendRollMessagesOnCombatByDefault.title": "Montrer les jets automitquement au MJ dans un combat",
   "anima.ui.systemSettings.useCombatTable.title": "Utiliser la table de combat",
   "anima.ui.systemSettings.useCombatTable.hint.title": "Calculez les dégâts en utilisant la table de combat dans le Core Exxet pg. 334-335",
+  "anima.ui.systemSettings.enabledAnimaMacros.title": "Habilitar o desactivar las macros del módulo de Anima [TBD: Translate to french]",
+  "anima.ui.systemSettings.enabledAnimaMacros.hint.title": "Al desactivarlo, dejan de verse los iconos de las calculadoras de daño y del diálogo de ataques. [TBD: Translate to french]",
   "anima.ui.tabs.combat": "Combat",
   "anima.ui.tabs.damageResistance": "Encaissement",
   "anima.ui.tabs.domine": "Domaine",

@@ -32,6 +32,13 @@ const DEFAULT_USER_MACROS: DefaultMacroConfig[] = [
   }
 ];
 
+const getDefualtMacrosBySystemSettings = (isGM: boolean, areAnimaMacrosEnabled: boolean) => {
+  if(areAnimaMacrosEnabled) {
+    return [];
+  }
+  return isGM ? DEFAULT_GM_MACROS : DEFAULT_USER_MACROS;
+}
+
 export const attachCustomMacroBar = async () => {
   const tgame = game as Game;
 
@@ -46,7 +53,8 @@ export const attachCustomMacroBar = async () => {
 
   $('.system-animabf').append(customHotbarHTML);
 
-  const defaultMacroConfigs = isGM ? DEFAULT_GM_MACROS : DEFAULT_USER_MACROS;
+  const areAnimaMacrosEnabled = tgame.settings.get('animabf', ABFSettingsKeys.ENABLED_ANIMA_MACROS);
+  const defaultMacroConfigs = getDefualtMacrosBySystemSettings(isGM, areAnimaMacrosEnabled);
 
   if (tgame.settings.get('animabf', ABFSettingsKeys.DEVELOP_MODE) && isGM) {
     defaultMacroConfigs.push({

@@ -3,7 +3,8 @@ export enum ABFSettingsKeys {
   ROUND_DAMAGE_IN_MULTIPLES_OF_5 = 'ROUND_DAMAGE_IN_MULTIPLES_OF_5',
   SEND_ROLL_MESSAGES_ON_COMBAT_BY_DEFAULT = 'SEND_ROLL_MESSAGES_ON_COMBAT_BY_DEFAULT',
   USE_DAMAGE_TABLE = 'USE_DAMAGE_TABLE',
-  DEVELOP_MODE = 'DEVELOP_MODE'
+  DEVELOP_MODE = 'DEVELOP_MODE',
+  ENABLED_ANIMA_MACROS = 'ENABLED_ANIMA_MACROS',
 }
 
 export const registerSettings = () => {
@@ -42,6 +43,15 @@ export const registerSettings = () => {
     scope: 'world',
     config: true,
     default: false,
+    type: Boolean
+  });
+
+  typedGame.settings.register('animabf', ABFSettingsKeys.ENABLED_ANIMA_MACROS, {
+    name: 'anima.ui.systemSettings.enabledAnimaMacros.title',
+    hint: 'anima.ui.systemSettings.enabledAnimaMacros.hint.title',
+    scope: 'world',
+    config: true,
+    default: true,
     type: Boolean
   });
 

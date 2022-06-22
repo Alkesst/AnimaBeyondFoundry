@@ -463,6 +463,8 @@
   "anima.ui.systemSettings.sendRollMessagesOnCombatByDefault.title": "Mostrar tiradas del GM forma automática al combatir",
   "anima.ui.systemSettings.useCombatTable.title": "Usar la Tabla de combate",
   "anima.ui.systemSettings.useCombatTable.hint.title": "Calcular daño usando la Tabla de combate que aparece en el Core Exxet pg. 334-335",
+  "anima.ui.systemSettings.enabledAnimaMacros.title": "Habilitar o desactivar las macros del módulo de Anima",
+  "anima.ui.systemSettings.enabledAnimaMacros.hint.title": "Al desactivarlo, dejan de verse los iconos de las calculadoras de daño y del diálogo de ataques.",
   "anima.ui.tabs.combat": "Combate",
   "anima.ui.tabs.damageResistance": "Acumulación",
   "anima.ui.tabs.domine": "Domine",

@@ -462,6 +462,8 @@
   "anima.ui.systemSettings.sendRollMessagesOnCombatByDefault.title": "Show GM rolls automatically in combat",
   "anima.ui.systemSettings.useCombatTable.title": "Use combat table",
   "anima.ui.systemSettings.useCombatTable.hint.title": "Calculate damage with the Combat Table explained in Core Exxet pg. 334-335",
+  "anima.ui.systemSettings.enabledAnimaMacros.title": "Enable or disable the Anima module macros",
+  "anima.ui.systemSettings.enabledAnimaMacros.hint.title": "When disabled, th damage calculator and the atack dialog won't be visible",
   "anima.ui.tabs.combat": "Combat",
   "anima.ui.tabs.damageResistance": "Damage Resistance",
   "anima.ui.tabs.domine": "Domine",
